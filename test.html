@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var num = parseInt('width:35.5px');
+        // if(num == 35.5){
+        //     console.log(0);            
+        // }else if(num == 35){
+        //     console.log(1);            
+        // }else if(num == NaN){
+        //     console.log(2);            
+        // }else if(typeof num == 'number'){
+        //     console.log(3);            
+        // }else{
+        //     console.log(4);            
+        // }
+        
+    // var num = 12;
+    // num > 0?(num <10?num++:num--):(num == 0?(num++,num=num/10):null);
+    // console.log(num);
+    function sum(){
+        var total = 0;
+        for(var i = 0; i <arguments.length; i++){
+            var item = arguments[i];
+            item = parseInt(item);
+            !isNaN(item)?total += item:null;
+        }
+        return total
+    }
+    console.log(sum(12,23,'34','aa'));
+    
+    
+</script>
+</body>
+</html>
