@@ -58,6 +58,50 @@ fn();
 console.log(a,b);		=>12,13
 ```
 
+### 2.3.2、条件判断下的变量提升
+
+```
+  console.log(fn);  			//undefined
+    if(1 === 1){
+        console.log(fn);		//函数体
+        function fn(){
+            console.log('ok');
+        }
+    }
+    console.log(fn);			//函数体
+    
+  答案：
+  1、不管条件是否成立都进行变量声明提升，但是判断体外只进行声明提升，不定义赋值，所以结果是undefined
+  2、在es6中的块级作用域中进行类似变量声明提升操作不光变量声明提升并且定义赋值，所以结果函数体
+  3、因为条件成立,判断体中条件执行，最后结果是函数体
+```
+
+### 2.3.2、重名问题
+
+1. var 和function关键字声明相同名字，不会重新声明，但是会重新定义
+
+   ```
+    fn()
+    function fn(){console.log(1);}
+    fn()
+    function fn(){console.log(2);}
+    fn()
+    var fn =100;
+    fn()
+    function fn(){console.log(3);}
+    fn()
+    function fn(){console.log(4);}
+    fn()
+    
+    答案：4，4，4，报错
+    fn = ...(1)
+    	  ...(2)
+    	  ...(3)
+    	  ...(4)
+    所以前3个fn()结果是4
+    var fn = 100; 没有重新声明fn，只是重新复制
+    100是基本数据类型不能执行，所以报错
+   ```
 
 
 # 三、数据类型

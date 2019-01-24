@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3、条件判断下的变量提升到底有多坑</title>
+</head>
+<body>
+<script>
+    console.log(fn);
+    if(1 === 2){
+        console.log(fn);
+        function fn(){
+            console.log('ok');
+        }
+    }
+    console.log(fn);
+</script>
+</body>
+</html>
+
+
+<script>
+
+    /*
+    * 答案：
+    * console.log(fn);  // =>undefined
+    * 条件判断里的
+    *  console.log(fn);  //=>函数本身
+    *
+    *
+    *
+    * 最后的
+    *  console.log(fn);  //=>函数本身
+    *
+    * */
+
+</script>

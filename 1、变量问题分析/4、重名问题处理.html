@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4、重名问题处理</title>
+</head>
+<body>
+<script>
+    fn()
+    function fn(){console.log(1);}
+    fn()
+    function fn(){console.log(2);}
+    fn()
+    var fn =100;
+    fn()
+    function fn(){console.log(3);}
+    fn()
+    function fn(){console.log(4);}
+    fn()
+</script>
+</body>
+</html> 
+
+
+
+
+<script>
+
+    /*
+    *答案：
+    * 4，
+    * 4，
+    * 4，
+    * 报错
+    *  var fn =100;
+    fn() =》Uncaught TypeError: fn is not a function
+    *
+    *
+    *
+    *
+    *
+    *
+    *
+    *
+    * */
+
+
+</script>

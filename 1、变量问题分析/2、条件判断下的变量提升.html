@@ -9,20 +9,20 @@
 <body>
     <script>
     // 小栗子1
-    console.log(a);  // undefined
+    console.log(a);
     if( 1 === 2){
         var a = 12;
     }
-    console.log(a);   // undefined   
+    console.log(a);
     //=>当前作用域下，不管条件是否成立都进行变量声明提升
 
 
     // 小栗子2
-    console.log(a);     // undefined
+    console.log(a);
     if( 'a' in window){
         var a = 100;
     }
-    console.log(a);     // 100
+    console.log(a);
     
 
     
@@ -31,3 +31,19 @@
     </script>
 </body>
 </html>
+
+<script>
+    /*
+    * 答案：
+    * 小栗子1
+    * console.log(a);  // undefined
+    * console.log(a);   // undefined
+    *
+    * 小栗子2
+    * console.log(a);     // undefined
+    * console.log(a);     // 100
+
+    * */
+
+
+</script>
