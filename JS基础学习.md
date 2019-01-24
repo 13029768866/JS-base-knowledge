@@ -24,6 +24,41 @@
 
 1. var变量声明提升值为undefined，function不光变量声明提升还进行赋值操作
 2. 函数执行开辟私有作用域，先执行变量声明提升，再形参赋值
+3. 写不写var的区别
+
+```
+console.log(a);       	=>undefined
+console.log(window.a); 	=>undefined
+var a = 12;			
+console.log(a);			=>12
+console.log(window.a);	=>12
+
+
+console.log(a);       	=>报错
+console.log(window.a); 	=>undefined
+a = 12;					=>解析为window.a的简写
+console.log(a);			=>12
+console.log(window.a);	=>12
+
+结论：有var的本质是一个变量，没有var的本质是window下的一个属性，window的属性和变量名相同的存在映射关系。
+```
+
+### 2.3.1、变量提升小栗子
+
+```
+console.log(a,b);  		=>undefined，undefined
+var a=12,
+b= 12;
+function fn(){
+    console.log(a,b);	=>undefined,12
+    var a = b =13;
+    console.log(a,b);   =>13,13             
+}
+fn();
+console.log(a,b);		=>12,13
+```
+
+
 
 # 三、数据类型
 

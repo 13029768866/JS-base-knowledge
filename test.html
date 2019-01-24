@@ -24,16 +24,33 @@
     // var num = 12;
     // num > 0?(num <10?num++:num--):(num == 0?(num++,num=num/10):null);
     // console.log(num);
-    function sum(){
-        var total = 0;
-        for(var i = 0; i <arguments.length; i++){
-            var item = arguments[i];
-            item = parseInt(item);
-            !isNaN(item)?total += item:null;
-        }
-        return total
+    // function sum(){
+    //     var total = 0;
+    //     for(var i = 0; i <arguments.length; i++){
+    //         var item = arguments[i];
+    //         item = parseInt(item);
+    //         !isNaN(item)?total += item:null;
+    //     }
+    //     return total
+    // }
+    // console.log(sum(12,23,'34','aa'));
+    // console.log(a);
+    // console.log(window.a);
+    // var a = 12;
+    // console.log(a);
+    // console.log(window.a);
+    console.log(a,b);
+    var a=12,
+        b= 12;
+    function fn(){
+        console.log(a,b);
+        var a = b =13;
+        console.log(a,b);                
     }
-    console.log(sum(12,23,'34','aa'));
+    fn();
+    console.log(a,b);
+    
+    
     
     
 </script>
