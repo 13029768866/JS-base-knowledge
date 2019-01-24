@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2、条件判断下的变量提升</title>
+</head>
+<body>
+    <script>
+    // 小栗子1
+    console.log(a);  // undefined
+    if( 1 === 2){
+        var a = 12;
+    }
+    console.log(a);   // undefined   
+    //=>当前作用域下，不管条件是否成立都进行变量声明提升
+
+
+    // 小栗子2
+    console.log(a);     // undefined
+    if( 'a' in window){
+        var a = 100;
+    }
+    console.log(a);     // 100
+    
+
+    
+    
+    
+    </script>
+</body>
+</html>
