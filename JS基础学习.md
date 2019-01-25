@@ -232,3 +232,17 @@ JS内存分为堆内存和栈内存
 **1、但是函数执行完成，某些内容被栈内存以外的变量占用。**
 
 **2、全局栈内存在页面关闭时候才会释放**
+
+# 五、单例设计模式（Singleton Pattern）
+
+```
+var nameSpace = (fucntion(){
+	function fn(){
+        
+	}
+    return {
+        fn:fn
+    }
+})()
+```
+

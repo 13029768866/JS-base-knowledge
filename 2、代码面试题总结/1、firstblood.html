@@ -38,17 +38,37 @@
     // x();
     // console.log(n);
 
-    var i = 1;
-    function fn(i){
-      return function(n){
-        console.log(n+(++i));        
-      }
-    }
-    var f = fn(2);
-    f(3);
-    fn(5)(6);
-    fn(7)(8);
-    f(4);
+    // var i = 1;
+    // function fn(i){
+    //   return function(n){
+    //     console.log(n+(++i));        
+    //   }
+    // }
+    // var f = fn(2);
+    // f(3);
+    // fn(5)(6);
+    // fn(7)(8);
+    // f(4);
+    
+
+    var n = 2;
+    var obj ={
+      n:3,
+      fn:(function(n){
+        n *= 2;
+        this.n +=2;
+        var n = 5;
+        return function(m){
+          this.n *= 2;
+          console.log(m+(++n));          
+        }
+      })(n)
+    };
+    var fn =obj.fn;
+    fn(3);
+    obj.fn(3);
+    console.log(n,obj.n);
+    
     </script>
   </body>
 </html>
