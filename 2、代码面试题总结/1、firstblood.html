@@ -8,19 +8,47 @@
   </head>
   <body>
     <script>
-      f = function() {return true;};
-      g = function() {return false; };
+      // f = function() {return true;};
+      // g = function() {return false; };
 
-      ~(function() {
-        if (g() && [] == ![]) {
-          console.log(g);
-          f = function() {return false;};
-          function g() {return true; }
-        }
-      })();
-      console.log(f());
-      console.log(g());
+      // ~(function() {
+      //   if (g() && [] == ![]) {
+      //     console.log(g);
+      //     f = function() {return false;};
+      //     function g() {return true; }
+      //   }
+      // })();
+      // console.log(f());
+      // console.log(g());
+  
 
+    // var n = 10;
+    // function fn(){
+    //   var n = 20;
+    //   function f(){
+    //     n++;
+    //     console.log(n);        
+    //   }
+    //   f();
+    //   return f;
+    // }
+
+    // var x = fn();
+    // x();
+    // x();
+    // console.log(n);
+
+    var i = 1;
+    function fn(i){
+      return function(n){
+        console.log(n+(++i));        
+      }
+    }
+    var f = fn(2);
+    f(3);
+    fn(5)(6);
+    fn(7)(8);
+    f(4);
     </script>
   </body>
 </html>
