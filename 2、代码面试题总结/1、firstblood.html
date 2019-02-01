@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>面试一血</title>
-  </head>
-  <body>
-    <script>
-      // f = function() {return true;};
-      // g = function() {return false; };
 
-      // ~(function() {
-      //   if (g() && [] == ![]) {
-      //     console.log(g);
-      //     f = function() {return false;};
-      //     function g() {return true; }
-      //   }
-      // })();
-      // console.log(f());
-      // console.log(g());
-  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>面试一血</title>
+</head>
+
+<body>
+  <script>
+    // f = function() {return true;};
+    // g = function() {return false; };
+
+    // ~(function() {
+    //   if (g() && [] == ![]) {
+    //     console.log(g);
+    //     f = function() {return false;};
+    //     function g() {return true; }
+    //   }
+    // })();
+    // console.log(f());
+    // console.log(g());
+
 
     // var n = 10;
     // function fn(){
@@ -48,28 +50,42 @@
     // fn(5)(6);
     // fn(7)(8);
     // f(4);
-    
 
-    var n = 2;
-    var obj ={
-      n:3,
-      fn:(function(n){
-        n *= 2;
-        this.n +=2;
-        var n = 5;
-        return function(m){
-          this.n *= 2;
-          console.log(m+(++n));          
-        }
-      })(n)
-    };
-    var fn =obj.fn;
-    fn(3);
-    obj.fn(3);
-    console.log(n,obj.n);
-    
 
-    
-    </script>
-  </body>
+    // var n = 2;
+    // var obj ={
+    //   n:3,
+    //   fn:(function(n){
+    //     n *= 2;
+    //     this.n +=2;
+    //     var n = 5;
+    //     return function(m){
+    //       this.n *= 2;
+    //       console.log(m+(++n));          
+    //     }
+    //   })(n)
+    // };
+    // var fn =obj.fn;
+    // fn(3);
+    // obj.fn(3);
+    // console.log(n,obj.n);
+
+    var num = 10; var obj = { num: 20 };
+    obj.fn = (function (num) {
+      this.num = num * 3;
+      num++;
+      return function (n) {
+        this.num += n;
+        num++;
+        console.log(num);
+      }
+    })(obj.num);
+    var fn = obj.fn;
+    fn(5);
+    obj.fn(10);
+    console.log(num, obj.num);
+
+  </script>
+</body>
+
 </html>

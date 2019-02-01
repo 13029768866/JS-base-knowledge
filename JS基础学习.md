@@ -235,6 +235,10 @@ JS内存分为堆内存和栈内存
 
 # 五、单例设计模式（Singleton Pattern）
 
+## 5.1、单例模式形式
+
+每一个命名空间都是一个单独的实例，并且实例与实例之间互不干扰。
+
 ```
 var nameSpace = (fucntion(){
 	function fn(){
@@ -245,4 +249,8 @@ var nameSpace = (fucntion(){
     }
 })()
 ```
+
+## 5.2、JS中单例模式
+
+
 
