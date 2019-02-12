@@ -40,4 +40,4 @@
 
 [**7、JS中的堆棧内存释放.html**](https://github.com/13029768866/JS-base-knowledge/blob/master/1%E3%80%81%E5%8F%98%E9%87%8F%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/7%E3%80%81JS%E4%B8%AD%E7%9A%84%E5%A0%86%E6%A3%A7%E5%86%85%E5%AD%98%E9%87%8A%E6%94%BE.html)
 
-![变量相关7图解](/JS基础/images/变量相关7图解.png)
+![变量相关7图解](./images/变量相关7图解.png)
