@@ -7,43 +7,60 @@
     <title>2、条件判断下的变量提升</title>
 </head>
 <body>
-    <script>
-    // 小栗子1
-    console.log(a);
-    if( 1 === 2){
-        var a = 12;
+<script>
+/*
+ * 在当前作用域下，不管条件是否成立都要进行变量提升
+ *   =>带VAR的还是只声明
+ *   =>带FUNCTION的在老版本浏览器渲染机制下，声明和定义都处理，但是为了迎合ES6中的块级作用域，新版浏览器对于函数（在条件判断中的函数），不管条件是否成立，都只是先声明，没有定义，类似于VAR
+ */
+
+console.log(fn);
+if (1 === 1) {
+    console.log(fn);
+    function fn() {
+        console.log('ok');
     }
-    console.log(a);
-    //=>当前作用域下，不管条件是否成立都进行变量声明提升
+}
+console.log(fn);
 
+//  =>  结果
+// undefined , 函数体本身fn , 函数体本身fn
 
-    // 小栗子2
-    console.log(a);
-    if( 'a' in window){
-        var a = 100;
+//  => 分析
+/*
+    1、ES6中判断体是一个块级作用域，Function只定义不赋值，所以第一个undefined;
+    2、当条件成立，进入到判断体中（在ES6中它是一个块级作用域）第一件事并不是代码执行，
+    而是类似于变量提升一样，先把FN声明和定义了，也就是判断体中代码执行之前，FN就已经赋值了;
+    3、可以理解为两次变量声明提升，第一次是全局，第二次是判断成立形成的块级作用域。
+*/
+
+ f = function () {return true;};  
+ g = function () {return false;};
+ ~function () {
+    //  console.log(g)    
+     if(g() && [] == ![]){
+        f = function () {return false;};
+        function g(){return true;}
     }
-    console.log(a);
-    
+ }()
+ console.log(f());
+ console.log(g());
 
-    
-    
-    
-    </script>
+ // => 结果
+ // 报错 =>Uncaught TypeError: g is not a function （此时的g是undefined）
+ 
+ // => 分析
+ /*
+    1、不管条件是否成立都要进行变量提升;
+    2、console.log(g)的值为undefined。
+       当前作用域，带Function的在老板浏览器渲染机制下，声明和定义。
+       为了迎合ES6中的块级作用域，新版浏览器对于函数（在条件判断中的函数），
+       不管条件是否成立，都只是先声明，没有定义，类似于VAR;
+    3、[] == ![]结果为true,
+       过程是[] == false取反的优先级最高,
+       Number([]) == Number(false),
+       0 == 0 所以最后的结果为true
+ */
+</script> 
 </body>
 </html>
-
-<script>
-    /*
-    * 答案：
-    * 小栗子1
-    * console.log(a);  // undefined
-    * console.log(a);   // undefined
-    *
-    * 小栗子2
-    * console.log(a);     // undefined
-    * console.log(a);     // 100
-
-    * */
-
-
-</script>

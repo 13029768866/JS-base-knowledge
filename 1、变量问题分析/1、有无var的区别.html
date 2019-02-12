@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1、有无var的区别</title>
+</head>
+<body>
+<script>
+    //=>在全局作用域下声明一个变量，也相当于给WINDOW全局对象设置了一个属性，变量的值就是属性值（私有作用域中声明的私有变量和WINDOW没啥关系）
+  
+    console.log(a);
+    console.log(window.a);
+    console.log("a" in window);
+    var a = 12;
+    console.log(a);
+    console.log(window.a);
+
+    //  => 结果
+    // undefined , undefined , true , 12 , 12
+    
+    console.log(a);
+    console.log(window.a);
+    console.log("a" in window);
+    var a = 12;
+    console.log(a);
+    console.log(window.a);
+
+    //  => 结果
+    // 报错 , undefined , false , 12 , 12
+
+    // => 分析
+    /*
+      1、in检测某个属性是否属于对象;
+      2、加var是声明一个全局变量a,不加var本质是Window的一个属性;
+      3、变量和Window属性名相同的存在“映射机制”;
+    */
+</script>
+</body>
+</html>

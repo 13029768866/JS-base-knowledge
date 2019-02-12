@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3、重名问题处理</title>
+</head>
+<body>
+<script>
+    fn();
+    function fn() {console.log(1);}
+    fn();
+    function fn() {console.log(2);}
+    fn();
+    var fn=100;
+    fn();
+    function fn() {console.log(3);}
+    fn();
+    function fn() {console.log(4);}
+    fn(); 
+
+//  =>  答案
+//  4 , 4 , 4 ,报错Uncaught TypeError: fn is not a function
+
+//  =>  分析
+/*
+   1、带VAR和FUNCTION关键字声明相同的名字，这种也算是重名了;
+   2、 关于重名的处理：如果名字重复了，不会重新的声明，但是会重新的定义（重新赋值）[不管是变量提升还是代码执行阶段皆是如此]
+*/
+</script> 
+</body>
+</html>
