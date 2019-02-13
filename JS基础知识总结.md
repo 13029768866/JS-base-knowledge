@@ -40,9 +40,9 @@
 
 [**7、JS中的堆棧内存释放.html**](https://github.com/13029768866/JS-base-knowledge/blob/master/1%E3%80%81%E5%8F%98%E9%87%8F%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/7%E3%80%81JS%E4%B8%AD%E7%9A%84%E5%A0%86%E6%A3%A7%E5%86%85%E5%AD%98%E9%87%8A%E6%94%BE.html)
 
-![变量相关7图解](./images/变量相关7图解.png)[**8、堆栈内存释放问题.html**](https://github.com/13029768866/JS-base-knowledge/blob/master/1%E3%80%81%E5%8F%98%E9%87%8F%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/8%E3%80%81%E5%A0%86%E6%A0%88%E5%86%85%E5%AD%98%E9%87%8A%E6%94%BE%E9%97%AE%E9%A2%98.html)
+![变量相关7图解](./images/变量相关7答案.png)[**8、堆栈内存释放问题.html**](https://github.com/13029768866/JS-base-knowledge/blob/master/1%E3%80%81%E5%8F%98%E9%87%8F%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/8%E3%80%81%E5%A0%86%E6%A0%88%E5%86%85%E5%AD%98%E9%87%8A%E6%94%BE%E9%97%AE%E9%A2%98.html)
 
-![变量问题7图解](./images/变量问题8图解.png)
+![变量问题7图解](./images/变量问题8答案.png)
 
 # 二、面向对象OOP
 
@@ -61,5 +61,57 @@ var nameSpace = (function () {
 })()
 ```
 
-## 2.2、面向对象习题
+### 2.1.1、单例设计模式优点
 
+1. 防止冲突。
+2. 使用方便。（工作使用单例模式封装utils）
+
+```
+//	=>	魏振江
+var wzjRender = (function () {
+    var fn = function () {
+        
+    };
+    return {
+        init: function () {
+
+        },
+        fn:fn
+    }
+})();
+skipRender.init();
+
+
+//	=>	魏振江1
+var wzj1Render = (function () {
+    var fn = function () {
+
+    };
+    return {
+        init: function () {
+            fn();//=>调取自己模块中的方法直接调取使用即可
+            wzjRender.fn();//=>调取别人模块中的方法
+        }
+    }
+})();
+weatherRender.init();
+```
+
+### 2.1.2、单例模式习题
+
+[**1、单例模式小练习.html**](https://github.com/13029768866/JS-base-knowledge/blob/master/2%E3%80%81%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/1.1%E3%80%81singleton-pattern%E5%B0%8F%E7%BB%83%E4%B9%A0.html)
+
+![单例模式练习图解](./images/单例练习答案.png)
+
+## 2.2、对象，类，实例的区别
+
+```
+面向对象编程，需要我们掌握：“对象、类、实例” 的概念
+    对象：万物皆对象
+    类：对象的具体细分（按照功能特点进行分类：大类、小类）=>JS中的基本数据类型
+    实例：类中具体的一个事物（拿出类别中的具体一个实例进行研究，那么当前类别下的其它实例也具备这些特点和特征）
+```
+
+### 2.2.1、JS中类的详细分析
+
+![](./images/JS中的类.png)
