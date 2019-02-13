@@ -46,3 +46,18 @@
 
 # 二、面向对象OOP
 
+## 2.1、单例模式（Singleton pattern）
+
+```
+高级单例模式形式：
+组成：命名空间 ， 闭包 ， 返回值是一个对象存放需要暴露方法
+var nameSpace = (function () {
+    function fn(){
+
+    }
+    return {
+        fn: fn
+    }
+})()
+```
+
