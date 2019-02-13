@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1.1、singleton-pattern小练习</title>
+</head>
+<body>
+<script>
+  var n = 2;
+  var obj = {
+    n: 3,
+    fn:(function (n){
+      n *= 2;
+      this.n += 2;
+      var n = 5;
+      return function(m){
+        this.n *= 2;
+        console.log(m + (++n));
+      }
+    })(n)
+  }
+  var fn = obj.fn;
+  fn(3);
+  obj.fn(3);
+  console.log(n,obj.n);
+
+  //  =>  答案见单例练习图片
+
+  //  =>  分析
+  /*
+    1、如果是obj.n会报错,因为自执行函数执行时，堆内存还没有存储完成键值对,
+    此时的obj是undefined，所以会报错。
+    2、自执行函数的地址指向window。
+  */ 
+  
+</script> 
+</body>
+</html>
