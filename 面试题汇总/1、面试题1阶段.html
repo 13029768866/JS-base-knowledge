@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>1、面试题1阶段</title>
+  </head>
+  <body>
+    <script>
+      // 1、第一题
+      console.log(a);
+      var a = 12;
+      function fn() {
+        console.log(a);
+        var a = 13;
+      }
+      fn();
+      console.log(a);
+
+      //  第二题
+      console.log(a);
+      var a = 12;
+      function fn() {
+        console.log(a);
+        a = 13;
+      }
+      fn();
+      console.log(a);
+
+      //    第三题
+      console.log(a);
+      a = 12;
+      function fn() {
+        console.log(a);
+        a = 13;
+      }
+      fn();
+      console.log(a);
+
+      //    第四题
+      var foo = 1;
+      function bar() {
+        if (!foo) {
+          var foo = 10;
+        }
+        console.log(foo);
+      }
+      bar();
+
+      //    第五题
+      var n = 0;
+      function a() {
+        var n = 10;
+        function b() {
+          n++;
+          console.log(n);
+        }
+        b();
+        return b;
+      }
+      var c = a();
+      c();
+      console.log(n);
+    </script>
+  </body>
+</html>
