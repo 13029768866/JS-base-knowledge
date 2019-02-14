@@ -157,6 +157,33 @@ var obj = new Object();
 2、构造函数执行
 
 ```
+var f1 = new Fn('xxx', 20);
+var f2 = new Fn('aaa', 30);
 
+
+console.log(f1 === f2);		//=>false：两个不同的实例（两个不同的堆内存地址）
+console.log(f1.age);		//=>30
+console.log(f2.name);		//=>'aaa'
+console.log("name" in f1);	//=>true name&age在两个不同的实例都有存储，但是都是每个实例自己私有的属性
+console.log(f1.n);			//=>undefined 只有this.xxx=xxx的才和实例有关系,n是私有作用域中的一个私有变量而已（this是当前类的实例
+
+=>	总结
+1、形参私有作用域
+2、变量声明提升，形参赋值
+3、代码执行
+4、代码执行完成前创建堆内存返回地址，并使this指向此地址
+5、构造函数中this.xxx是给实例绑定私有属性，没有this的本质是函数中的一个私有变量。
 ```
+
+## 2.4、原型和原型链
+
+   1、所有的函数数据类型都天生自带一个属性：prototype（原型），这个属性的值是一个对象，浏览器会默认给它开辟一个堆内存
+
+   2、在浏览器给prototype开辟的堆内存中有一个天生自带的属性：constructor，这个属性存储的值是当前函数本身
+
+   3、每一个对象都有一个__proto__的属性，这个属性指向当前实例所属类的prototype（如果不能确定它是谁的实例，都是Object的实例
+
+![原型链图解](./images/原型链分析.png)
+
+### 2.4.1、原型链问题
 
