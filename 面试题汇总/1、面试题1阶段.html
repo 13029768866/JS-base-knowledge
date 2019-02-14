@@ -62,6 +62,59 @@
       var c = a();
       c();
       console.log(n);
+
+      //   第六题
+      var a = 10,
+        b = 11,
+        c = 12;
+      function test(a) {
+        a = 1;
+        var b = 2;
+        c = 3;
+      }
+      test(10);
+      console.log(a);
+      console.log(b);
+      console.log(c);
+
+      //   第七题
+      if (!("a" in window)) {
+        var a = 1;
+      }
+      console.log(a);
+
+      //   第八题
+      var a = 4;
+      function b(x, y, a) {
+        console.log(a);
+        arguments[2] = 10;
+        console.log(a);
+      }
+      a = b(1, 2, 3);
+      console.log(a);
+
+      //   第九题
+      var foo = "hello";
+      (function(foo) {
+        console.log(foo);
+        var foo = foo || "world";
+        console.log(foo);
+      })(foo);
+      console.log(foo);
+
+      //   第十题
+      var a = 9;
+      function fn() {
+        a = 0;
+        return function(b) {
+          return b + a++;
+        };
+      }
+      var f = fn();
+      console.log(f(5));
+      console.log(fn()(5));
+      console.log(f(5));
+      console.log(a);
     </script>
   </body>
 </html>
