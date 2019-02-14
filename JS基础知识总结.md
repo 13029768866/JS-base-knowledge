@@ -1,3 +1,5 @@
+
+
 # 一、变量
 
 ## 1.1、变量提升
@@ -187,3 +189,6 @@ console.log(f1.n);			//=>undefined 只有this.xxx=xxx的才和实例有关系,n�
 
 ### 2.4.1、原型链问题
 
+[**1、prototype原型链问题**](https://github.com/13029768866/JS-base-knowledge/blob/master/2%E3%80%81%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/2%E3%80%81prototype.html)
+
+![图解答案](./images/原型链题1答案.png)
