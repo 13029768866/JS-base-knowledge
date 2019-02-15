@@ -115,6 +115,43 @@
       console.log(fn()(5));
       console.log(f(5));
       console.log(a);
+
+      //   第十一题
+      var ary = [1, 2, 3, 4];
+      function fn(ary) {
+        ary[0] = 0;
+        ary = [0];
+        ary[0] = 100;
+        return ary;
+      }
+      var res = fn(ary);
+      console.log(ary);
+      console.log(res);
+
+      //   第十二题
+      function fn(i) {
+        return function(n) {
+          console.log(n + i++);
+        };
+      }
+      var f = fn(10);
+      f(20);
+      fn(20)(40);
+      fn(30)(50);
+      f(30);
+      
+      //   第十三题
+      var i = 10;
+      function fn() {
+        return function(n) {
+          console.log(n + ++i);
+        };
+      }
+      var f = fn();
+      f(20);
+      fn()(20);
+      fn()(30);
+      f(30);
     </script>
   </body>
 </html>
