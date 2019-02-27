@@ -314,6 +314,18 @@
     f2.bb();
     f2.aa();
     f2.__proto__.aa();
+
+    //  第二十一题
+    // 实现数组去重？
+    Array.prototype.myUnique = function myUnique(){
+      var obj = {};
+      for(var i = 0;i < this.length ;i++){
+        var item = this[i];
+        obj.hasOwnProperty(item)?(this[i] = this[this.length - 1],this.length--,i--):obj[item] = item
+      }
+      obj = null;
+      return this;
+    }
   </script>
 </body>
 
