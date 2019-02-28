@@ -207,9 +207,30 @@ console.log(f1.n);			//=>undefined 只有this.xxx=xxx的才和实例有关系,n�
 
 ```
 fn.call:函数通过原型链找到Function.prototype上的call方法
+
+细节：
+1、非严格模式，不传参数，或者参数为null/undefined，this指向window
+2、严格模式，不传参数this是undefined
 ```
 
-[**1、call方法测试题.html**](https://github.com/13029768866/JS-base-knowledge/blob/master/1%E3%80%81%E5%8F%98%E9%87%8F%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/1%E3%80%81%E6%9C%89%E6%97%A0var%E7%9A%84%E5%8C%BA%E5%88%AB.html)
+[**1、call方法测试题.html**](https://github.com/13029768866/JS-base-knowledge/blob/master/2%E3%80%81%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/3%E3%80%81call%E6%96%B9%E6%B3%95%E6%B5%8B%E8%AF%95%E9%A2%98.html)
 
+2、apply和call用法相同但是传参方式是一个数组
 
+3、bind:语法和call一模一样，区别在于立即执行还是等待执行（不兼容ie6-8）
+
+4、求数组最大值方法？
+
+```
+1、arr.sort(function(a,b){return b-a})[0]
+2、Math.max.apply(null,arr) 
+3、Math.max(...arr) 展开运算符
+```
+
+5、伪数组转化成真数组的方法？
+
+```
+1、arr = [].slice.call(arguments,0);
+2、arr = [...arguments];
+```
 
