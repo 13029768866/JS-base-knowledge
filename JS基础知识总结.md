@@ -192,3 +192,20 @@ console.log(f1.n);			//=>undefined 只有this.xxx=xxx的才和实例有关系,n�
 [**1、prototype原型链问题**](https://github.com/13029768866/JS-base-knowledge/blob/master/2%E3%80%81%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/2%E3%80%81prototype.html)
 
 ![图解答案](./images/原型链题1答案.png)
+
+## 2.5、函数的三种身份
+
+1. 普通函数
+2. 类
+3. 普通对象
+
+![图解答案](./images/函数的三种用法.png)
+
+### 2.5.1、call,apply,bind
+
+1、call执行
+
+```
+fn.call:函数通过原型链找到Function.prototype上的call方法
+```
+

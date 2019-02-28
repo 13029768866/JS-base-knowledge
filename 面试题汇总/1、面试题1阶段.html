@@ -13,6 +13,7 @@
     // 1、第一题
     console.log(a);
     var a = 12;
+
     function fn() {
       console.log(a);
       var a = 13;
@@ -23,6 +24,7 @@
     //  第二题
     console.log(a);
     var a = 12;
+
     function fn() {
       console.log(a);
       a = 13;
@@ -33,6 +35,7 @@
     //    第三题
     console.log(a);
     a = 12;
+
     function fn() {
       console.log(a);
       a = 13;
@@ -42,6 +45,7 @@
 
     //    第四题
     var foo = 1;
+
     function bar() {
       if (!foo) {
         var foo = 10;
@@ -52,8 +56,10 @@
 
     //    第五题
     var n = 0;
+
     function a() {
       var n = 10;
+
       function b() {
         n++;
         console.log(n);
@@ -69,6 +75,7 @@
     var a = 10,
       b = 11,
       c = 12;
+
     function test(a) {
       a = 1;
       var b = 2;
@@ -87,6 +94,7 @@
 
     //   第八题
     var a = 4;
+
     function b(x, y, a) {
       console.log(a);
       arguments[2] = 10;
@@ -106,6 +114,7 @@
 
     //   第十题
     var a = 9;
+
     function fn() {
       a = 0;
       return function (b) {
@@ -120,6 +129,7 @@
 
     //   第十一题
     var ary = [1, 2, 3, 4];
+
     function fn(ary) {
       ary[0] = 0;
       ary = [0];
@@ -144,6 +154,7 @@
 
     //   第十三题
     var i = 10;
+
     function fn() {
       return function (n) {
         console.log(n + ++i);
@@ -157,7 +168,9 @@
 
     //   第十四题
     var num = 10;
-    var obj = { num: 20 };
+    var obj = {
+      num: 20
+    };
     obj.fn = (function (num) {
       this.num = num * 3;
       num++;
@@ -174,7 +187,9 @@
 
     //   第十四题变种
     var num = 10,
-      obj = { num: 20 };
+      obj = {
+        num: 20
+      };
     obj.fn = (function (num) {
       num = this.num + 10;
       this.num = num + 10;
@@ -221,13 +236,25 @@
           请问如下代码是否能实现？
           如果不能实现那么现在的效果是什么样的？
           应该做怎样的修改才能达到我们想要的效果，并说明原理？*/
-    <div id="btnBox">
-      <input type="button" value="button_1" />
-      <input type="button" value="button_2" />
-      <input type="button" value="button_3" />
-      <input type="button" value="button_4" />
-      <input type="button" value="button_5" />
-    </div>
+    <
+    div id = "btnBox" >
+      <
+      input type = "button"
+    value = "button_1" / >
+      <
+      input type = "button"
+    value = "button_2" / >
+      <
+      input type = "button"
+    value = "button_3" / >
+      <
+      input type = "button"
+    value = "button_4" / >
+      <
+      input type = "button"
+    value = "button_5" / >
+      <
+      /div>
 
 
     var btnBox = document.getElementById('btnBox'),
@@ -273,7 +300,7 @@
       this.b = function () {
         alert(this.a);
       }
-    } 
+    }
     fun.prototype = {
       b: function () {
         this.a = 20;
@@ -290,10 +317,10 @@
 
 
     //  第二十题
-    function Fn(){
+    function Fn() {
       var n = 10;
       this.m = 20;
-      this.aa = function(){
+      this.aa = function () {
         console.log(this.m);
       }
     }
@@ -302,7 +329,7 @@
     }
     var f1 = new Fn();
     Fn.prototype = {
-      aa:function(){
+      aa: function () {
         console.log(this.m + 10);
       }
     }
@@ -317,15 +344,45 @@
 
     //  第二十一题
     // 实现数组去重？
-    Array.prototype.myUnique = function myUnique(){
-      var obj = {};
-      for(var i=0;i<this.length; i++){
-        var item = this[i];
-        obj.hasOwnProperty(item)?(this[i] = this[this.length - 1],this.length--,i--):obj[item] = item;        
-      }
-      obj = null;
+
+    //   第二十二题
+    //  document.parentNode 和 document.parentnode的区别？
+
+    //  第二十三题
+    //  规避多人开发函数重名的问题？
+
+    //  第二十四题
+    //  闭包作用和优缺点？
+
+    //  第二十五题
+    //  阿里超级经典面试题
+    function Foo() {
+      getName = function () {
+        console.log(1);
+      };
       return this;
     }
+    Foo.getName = function () {
+      console.log(2);
+    };
+    Foo.prototype.getName = function () {
+      console.log(3);
+    };
+    var getName = function () {
+      console.log(4);
+    };
+
+    function getName() {
+      console.log(5);
+    }
+
+    Foo.getName();
+    getName();
+    Foo().getName();
+    getName();
+    new Foo.getName();
+    new Foo().getName();
+    new new Foo().getName();
   </script>
 </body>
 
