@@ -209,3 +209,7 @@ console.log(f1.n);			//=>undefined 只有this.xxx=xxx的才和实例有关系,n�
 fn.call:函数通过原型链找到Function.prototype上的call方法
 ```
 
+[**1、call方法测试题.html**](https://github.com/13029768866/JS-base-knowledge/blob/master/1%E3%80%81%E5%8F%98%E9%87%8F%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/1%E3%80%81%E6%9C%89%E6%97%A0var%E7%9A%84%E5%8C%BA%E5%88%AB.html)
+
+
+

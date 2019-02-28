@@ -15,6 +15,11 @@
     fn1.call.call(fn2);
     Function.prototype.call(fn1);
     Function.prototype.call.call(fn1);
+
+
+    // => 答案:1,2,空,1
+    // 总结方法就是一个call让call前面的函数执行，
+    // 两个和两个以上的call让call后面的函数执行
 </script> 
 </body>
 </html>
