@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2、面试题二阶段</title>
+</head>
+<body>
+<script>
+    //  第一题
+    if('m' in window){
+        var m = m && 12;
+    }
+    console.log(m);
+
+    //  第二题
+    let n = 10;
+    if(!('n' in window)){
+        let n = n + 30;
+    }
+    console.log(n);
+
+    //  第三题
+    let n =10,
+        m = 20;
+    ~function(n,m){
+        let arg = arguments;
+        arg[0] = n || 100;
+        arg[1] = m || 200;
+        console.log(n, m);
+    }(m)
+    console.log(n, m);
+
+    //  第四题
+    let ary =[12,23,34,45];
+    (function (ary){
+        ary.pop();
+        ary = ary.slice(0);
+        ary.shift();
+        console.log(ary);
+    })(ary);
+    console.log(ary);
+
+    //  第五题
+    var n =0,
+        fn = function () {
+            this.n *= 2;
+            n++;
+            return function (m) {
+                n += ++m;
+                console.log(n);
+            }
+        }
+    var f = fn(2);
+    f(3);
+    fn(3)(4);
+    f(4);
+    console.log(n);
+</script>
+</body>
+</html>
