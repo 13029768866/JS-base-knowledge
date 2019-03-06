@@ -26,3 +26,8 @@ ssh -T git@github.com
 Hi 13029768866! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
+# 四、webstorm破解地址
+
+```
+IDEA license server 2018 phpstorm license server webstorm free license server https://licensez.com/
+```
