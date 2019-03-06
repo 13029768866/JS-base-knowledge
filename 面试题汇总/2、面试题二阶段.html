@@ -54,7 +54,22 @@
     f(3);
     fn(3)(4);
     f(4);
-    console.log(n);  
+    console.log(n);
+
+    //  第五题变种
+    let i =2;
+    let fn = function(n){
+        i *= 2;
+        return function(m) {
+            i -= (n--) + (++m);
+            console.log(i);
+        }
+    };
+    let f = fn(1);
+    f(2);
+    fn(3)(4);
+    f(5);
+    console.log(i);
 </script>
 </body>
 </html>
