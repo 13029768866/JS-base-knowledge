@@ -163,7 +163,40 @@
     A(1);
     A(2);
 
-    
+    //  第十二题
+    window.val = 1;
+    let json = {
+        val: 10,
+        dbl:function () {
+            this.val *= 2;
+        }
+    }
+    json.dbl();
+    let dbl = json.dbl;
+    dbl();
+    json.dbl.call(window);
+    alert(window.val + json.val);
+
+    //  第十三题
+    (function () {
+        let val = 1;
+        let json = {
+            val:10,
+            dbl: function () {
+                val *= 2;
+            }
+        }
+        json.dbl();
+        alert(json.val + val);
+    })();
+
+    //  第十四题
+    let test = (function (i) {
+        return function () {
+            alert(i *= 2);
+        }
+    })(2);
+    test(5);
 </script>
 </body>
 </html>
