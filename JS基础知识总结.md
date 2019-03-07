@@ -322,7 +322,7 @@ let reg = /^\w+([-.]\w+)*@[A-Za-z0-9]+（[-.][A-Za-z0-9]+）*(\.[A-Za-z0-9]+)$/
 获取当前元素可视区域的高度（内容宽高	+	padding）
 
 ```
-=>	获取当前屏幕（可视区域宽高）
+=>	获取当前（第一屏幕）屏幕（可视区域宽高）
 document.documentElement.clientWidth ||	document.body.clientWidth
 
 document.documentElement.clientHeight ||	document.body.clientHeight
@@ -330,4 +330,24 @@ document.documentElement.clientHeight ||	document.body.clientHeight
 
 2、clientTop		&	clientLeft
 
-获取（上/左）边框的宽度
+获取（上/左）边框的宽度。（只有上和左）
+
+## 4.2、Offset
+
+1、offsetWidth	& 	offsetHegiht	
+
+在client的的基础上加上border
+
+## 4.3、Scroll
+
+1、scrollWidth	& 	scrollHegiht 
+
+真实内容的宽高
+
+```
+=>	获取当前屏幕（真实内容宽高）
+document.documentElement.scrollWidth  ||	document.body.scrollWidth	
+
+document.documentElement.scrollHegiht ||	document.body.scrollHegiht 
+```
+
