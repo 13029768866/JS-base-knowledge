@@ -317,4 +317,17 @@ let reg = /^\w+([-.]\w+)*@[A-Za-z0-9]+（[-.][A-Za-z0-9]+）*(\.[A-Za-z0-9]+)$/
 
 ## 4.1、Client
 
-1、clientWidth	& 	clientHegiht:获取当前元素可视区域的高度
+1、clientWidth	& 	clientHegiht
+
+获取当前元素可视区域的高度（内容宽高	+	padding）
+
+```
+=>	获取当前屏幕（可视区域宽高）
+document.documentElement.clientWidth ||	document.body.clientWidth
+
+document.documentElement.clientHeight ||	document.body.clientHeight
+```
+
+2、clientTop		&	clientLeft
+
+获取（上/左）边框的宽度
