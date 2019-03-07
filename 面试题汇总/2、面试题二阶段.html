@@ -141,6 +141,29 @@
     f2.getX();
     f2.__proto__.getX();
     f2.getY();
+
+    //  第十题
+    var a = 0;
+    function fun() {
+        alert(a);
+        var a = 10;
+    }
+    fun();
+    alert(a);
+
+    //  第十一题
+    let a = 0,
+        b = 0;
+    function A(a) {
+        A = function (b) {
+            alert(a + b++);
+        }
+        alert(a++);
+    }
+    A(1);
+    A(2);
+
+    
 </script>
 </body>
 </html>
