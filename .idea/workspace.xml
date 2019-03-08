@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="51019f0f-a292-4bd0-b4bb-8216b7f1e433" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4、DOM盒模型/1、demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/4、DOM盒模型/跑马灯.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS基础知识总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/JS基础知识总结.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,10 +18,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/4、DOM盒模型/1、demo.html">
+        <entry file="file://$PROJECT_DIR$/4、DOM盒模型/跑马灯.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+            <state relative-caret-position="1406">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -34,6 +35,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>li</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -44,13 +50,14 @@
         <option value="$PROJECT_DIR$/面试题汇总/images/2、面试题二阶段.html" />
         <option value="$PROJECT_DIR$/面试题汇总/2、面试题二阶段.html" />
         <option value="$PROJECT_DIR$/4、DOM盒模型/1、demo.html" />
+        <option value="$PROJECT_DIR$/4、DOM盒模型/跑马灯.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-6" />
-    <option name="width" value="989" />
-    <option name="height" value="1080" />
+    <option name="width" value="949" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -67,6 +74,17 @@
             <path>
               <item name="JS基础" type="b2602c69:ProjectViewProjectNode" />
               <item name="JS基础" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS基础" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS基础" type="462c0819:PsiDirectoryNode" />
+              <item name="4、DOM盒模型" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JS基础" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JS基础" type="462c0819:PsiDirectoryNode" />
+              <item name="4、DOM盒模型" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -109,19 +127,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551846314974</updated>
-      <workItem from="1551846317888" duration="15788000" />
+      <workItem from="1551846317888" duration="18684000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15788000" />
+    <option name="totallyTimeSpent" value="18684000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="989" height="1080" extended-state="0" />
-    <editor active="true" />
+    <frame x="-6" y="0" width="949" height="1000" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.040296923" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0841639" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
@@ -157,13 +174,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/4、DOM盒模型/css/reset.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4、DOM盒模型/1、demo.html">
+    <entry file="file://$PROJECT_DIR$/../2018年第二期源码、笔记/WEEK3/0425DAY1/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        <state relative-caret-position="-4403">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4、DOM盒模型/css/reset.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="843" selection-start-column="841" selection-end-column="843" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4、DOM盒模型/跑马灯.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1406">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>

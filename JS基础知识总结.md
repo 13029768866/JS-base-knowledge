@@ -338,6 +338,12 @@ document.documentElement.clientHeight ||	document.body.clientHeight
 
 在client的的基础上加上border
 
+2、offsetParent	&	offsetTop	&	offsetLeft
+
+offsetParent：当前盒子父级参照物
+
+（offsetTop	/  offsetLeft）:当前盒子距离其父级参照物的偏移量,从单前盒子外边框 到	父级盒子内边框
+
 ## 4.3、Scroll
 
 1、scrollWidth	& 	scrollHegiht 
@@ -350,4 +356,16 @@ document.documentElement.scrollWidth  ||	document.body.scrollWidth
 
 document.documentElement.scrollHegiht ||	document.body.scrollHegiht 
 ```
+
+2、scrollTop	&	scrollLeft
+
+滚动条卷曲的高度/宽度
+
+min:0
+
+max:真实页面高度  —	一屏幕高度（document.documentElement.scrollHegiht— document.documentElement.clientHegiht）
+
+## 4.4、三大系列属性可读性
+
+只有scrollTop、scrollLeft可读写，其余属性都是只读。
 
