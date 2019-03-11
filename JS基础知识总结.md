@@ -371,3 +371,37 @@ max:真实页面高度  —	一屏幕高度（document.documentElement.scrollHeg
 
 # 五、JQuery源码分析
 
+## 5.1、JQ的实现思路
+
+```
+let Fn = function（）{
+}
+Fn.prototype = function(){
+    aa:function(){
+        
+    }
+}
+Fn().aa()
+
+如何实现直接调用？
+let Fn = function(){
+    return new init()
+}
+let init = function(){
+    
+}
+
+init.prototype = Fn.prototype；
+```
+
+## 5.2、JQ的执行
+
+=>JQ选择器：基于各种选择器创建JQ实例
+
+参数
+
+1、selector：选择器的类型
+
+2、context：基于选择器获取元素的指定上下文（默认document）
+
+JQ对象：一个类数组结构
