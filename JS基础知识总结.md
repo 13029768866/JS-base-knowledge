@@ -405,3 +405,6 @@ init.prototype = Fn.prototype；
 2、context：基于选择器获取元素的指定上下文（默认document）
 
 JQ对象：一个类数组结构
+
+# 六、瀑布流
+
