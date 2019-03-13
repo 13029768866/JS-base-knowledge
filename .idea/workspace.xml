@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/面试题汇总/3、面试题3阶段.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="93" selection-end-column="13" />
+            <state relative-caret-position="214">
+              <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="108" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -143,12 +143,12 @@
       <workItem from="1551846317888" duration="20196000" />
       <workItem from="1552039376701" duration="818000" />
       <workItem from="1552230515270" duration="7000" />
-      <workItem from="1552477691375" duration="5338000" />
+      <workItem from="1552477691375" duration="7309000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26359000" />
+    <option name="totallyTimeSpent" value="28330000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="948" height="1080" extended-state="0" />
@@ -223,8 +223,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/面试题汇总/3、面试题3阶段.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="93" selection-end-column="13" />
+        <state relative-caret-position="214">
+          <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="108" selection-end-column="5" />
         </state>
       </provider>
     </entry>
