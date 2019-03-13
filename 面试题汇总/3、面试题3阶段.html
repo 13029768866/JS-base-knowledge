@@ -57,6 +57,41 @@
     };
     point.moveTo(100,200);
     console.log(point.x, point.y);
+
+    // 第八题
+    function fun(){
+        this.a = 10;
+        this.b = function(){
+            alert(this.a);
+        }
+    }
+    fun.prototype ={
+        b: function(){
+            this.a = 20;
+            alert(this.a);
+        },
+        c:function(){
+            this.a = 30;
+            alert(this.a)
+        }
+    }
+    var my_fun = new fun();
+    my_fun.b();
+    my_fun.c();
+
+    // 第九题
+    var n =2;
+    function  a() {
+        var n =3;
+        function b(m) {
+            alert(++n + m)
+        }
+        b(4);
+        return b;
+    }
+    var c =a(5);
+    c(6);
+    alert(n);
 </script>
 </body>
 </html>
