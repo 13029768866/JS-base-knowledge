@@ -11,6 +11,38 @@
 
     // 第二题
     // 重排（回流）和重绘的读写分离的理解？
+
+    // 第三题
+    var str = 'abc123',
+        num = parseFloat(str);
+    if(num === NaN){
+        alert(NaN);
+    }else if(num === 123){
+        alert(123);
+    }else if(typeof num === 'number'){
+        alert('number')
+    }else{
+        alert('str')
+    }
+
+    //  第四题
+    var a = "abc" + 123 + 456;
+    alert(a);
+
+    var b= '456' - '123';
+    alert(b);
+
+    var c = 1,
+        d = '1';
+    var f = c>d?(c<d?c:d):(c==d?c:d);
+    alert(f);
+
+    //  第五题
+    // 用户昵称规定只能是“数字、大小写字母”组成，而且不能少于2位，
+    // 不能超过20位，写个正则
+
+    //  第六题
+    // 谈谈你对面向对象的理解？
 </script>
 </body>
 </html>
