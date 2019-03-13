@@ -43,6 +43,20 @@
 
     //  第六题
     // 谈谈你对面向对象的理解？
+
+    //  第七题
+    var point ={
+        x:10,
+        y:20,
+        moveTo: function(x,y){
+            var moveX = function(x){this.x = x}
+            var moveY = function(y){this.y = y}
+            moveX(x);
+            moveY(y);
+        }
+    };
+    point.moveTo(100,200);
+    console.log(point.x, point.y);
 </script>
 </body>
 </html>
