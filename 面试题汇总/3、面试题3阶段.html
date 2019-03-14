@@ -107,6 +107,30 @@
 
     // 第十四题
     // 谈谈你对JQuery的理解？
+
+    // 第十五题
+    var a ={n:4};
+    var b = a;
+    b.x = a ={n:10};
+    console.log(a.x);
+    console.log(b.x);
+
+    // 第十六题
+    // 谈谈你对闭包的理解？
+
+    // 第十七题
+    let  a = 3,
+         b = 4;
+    function A(a) {
+        A = function (b) {
+            console.log(a + (--b));
+        }
+        console.log(++a);
+    }
+    A(5);
+    A(6);
+
+    
 </script>
 </body>
 </html>

@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/面试题汇总/3、面试题3阶段.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="109" column="9" lean-forward="true" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
+            <state relative-caret-position="177">
+              <caret line="121" column="1" lean-forward="true" selection-start-line="121" selection-start-column="1" selection-end-line="130" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -56,9 +56,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-6" />
-    <option name="width" value="948" />
+    <option name="width" value="974" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -132,18 +132,18 @@
       <workItem from="1551846317888" duration="20196000" />
       <workItem from="1552039376701" duration="818000" />
       <workItem from="1552230515270" duration="7000" />
-      <workItem from="1552477691375" duration="15818000" />
+      <workItem from="1552477691375" duration="18247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36839000" />
+    <option name="totallyTimeSpent" value="39268000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="948" height="1080" extended-state="1" />
+    <frame x="-6" y="0" width="974" height="1080" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.042128604" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.040948275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -220,10 +220,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../2018年第二期源码、笔记/WEEK4/0503DAY2/js/3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../2018年第二期源码、笔记/WEEK4/0503DAY2/js/4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="42" selection-start-line="42" selection-end-line="61" selection-end-column="48" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/面试题汇总/3、面试题3阶段.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="109" column="9" lean-forward="true" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
+        <state relative-caret-position="177">
+          <caret line="121" column="1" lean-forward="true" selection-start-line="121" selection-start-column="1" selection-end-line="130" selection-end-column="9" />
         </state>
       </provider>
     </entry>
