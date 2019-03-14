@@ -19,19 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/面试题汇总/3、面试题3阶段.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="108" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../2018年第二期源码、笔记/WEEK2/0422DAY5/js/1-正则.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1665">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="547">
+              <caret line="103" column="18" lean-forward="true" selection-start-line="103" selection-start-column="18" selection-end-line="103" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -67,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-6" />
     <option name="width" value="948" />
     <option name="height" value="1080" />
@@ -143,12 +132,12 @@
       <workItem from="1551846317888" duration="20196000" />
       <workItem from="1552039376701" duration="818000" />
       <workItem from="1552230515270" duration="7000" />
-      <workItem from="1552477691375" duration="7309000" />
+      <workItem from="1552477691375" duration="12857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28330000" />
+    <option name="totallyTimeSpent" value="33878000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="948" height="1080" extended-state="0" />
@@ -221,10 +210,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../2018年第二期源码、笔记/WEEK4/0502DAY1/js/6.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="73" column="37" lean-forward="true" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/面试题汇总/3、面试题3阶段.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="108" selection-end-column="5" />
+        <state relative-caret-position="547">
+          <caret line="103" column="18" lean-forward="true" selection-start-line="103" selection-start-column="18" selection-end-line="103" selection-end-column="18" />
         </state>
       </provider>
     </entry>
