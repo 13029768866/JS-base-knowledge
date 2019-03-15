@@ -130,7 +130,32 @@
     A(5);
     A(6);
 
-    
+    // 第十八题
+    window.val = 1;
+    let json = {
+        val: 10,
+        dbl: function () {
+            this.val *= 2;
+        }
+    }
+    json.dbl();
+    let dbl = json.dbl;
+    dbl();
+    json.dbl.call(window);
+    alert(window.val + json.val);
+
+    // 第十九题
+    let n = 2,
+        fn = () => {
+        this.n *= 3;
+        n++;
+        return m => console.log((++n)+m)
+        }
+    let f = fn(4);
+    f(5);
+    fn(4)(5);
+    f(6);
+    console.log(n);
 </script>
 </body>
 </html>
