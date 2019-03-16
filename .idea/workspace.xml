@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51019f0f-a292-4bd0-b4bb-8216b7f1e433" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/面试题汇总/3、面试题3阶段.html" beforeDir="false" afterPath="$PROJECT_DIR$/面试题汇总/3、面试题3阶段.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/面试题汇总/面试题3阶段答案及分析.md" beforeDir="false" afterPath="$PROJECT_DIR$/面试题汇总/面试题3阶段答案及分析.md" afterDir="false" />
-    </list>
+    <list default="true" id="51019f0f-a292-4bd0-b4bb-8216b7f1e433" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -19,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/面试题汇总/1、面试题1阶段.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="380" column="20" lean-forward="true" selection-start-line="380" selection-start-column="20" selection-end-line="380" selection-end-column="20" />
+            <state relative-caret-position="14060">
+              <caret line="380" column="20" selection-start-line="380" selection-start-column="20" selection-end-line="380" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -28,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/面试题汇总/2、面试题2阶段.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            <state relative-caret-position="111">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -37,7 +34,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/面试题汇总/3、面试题3阶段.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4329">
+            <state relative-caret-position="5772">
               <caret line="156" column="9" lean-forward="true" selection-start-line="156" selection-start-column="9" selection-end-line="156" selection-end-column="9" />
             </state>
           </provider>
@@ -46,7 +43,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../2018年第二期源码、笔记/WEEK4/0502DAY1/js/1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
+            <state relative-caret-position="3330">
               <caret line="110" column="8" lean-forward="true" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="8" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -174,17 +171,17 @@
       <workItem from="1552039376701" duration="818000" />
       <workItem from="1552230515270" duration="7000" />
       <workItem from="1552477691375" duration="22323000" />
+      <workItem from="1552653039053" duration="595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43344000" />
+    <option name="totallyTimeSpent" value="43939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="439" y="5" width="974" height="1080" extended-state="1" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30603448" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30603448" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -196,7 +193,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32969433" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.09606987" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.09606987" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -275,28 +272,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/面试题汇总/1、面试题1阶段.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="380" column="20" lean-forward="true" selection-start-line="380" selection-start-column="20" selection-end-line="380" selection-end-column="20" />
+        <state relative-caret-position="14060">
+          <caret line="380" column="20" selection-start-line="380" selection-start-column="20" selection-end-line="380" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/面试题汇总/2、面试题2阶段.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        <state relative-caret-position="111">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/面试题汇总/3、面试题3阶段.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4329">
+        <state relative-caret-position="5772">
           <caret line="156" column="9" lean-forward="true" selection-start-line="156" selection-start-column="9" selection-end-line="156" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../2018年第二期源码、笔记/WEEK4/0502DAY1/js/1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
+        <state relative-caret-position="3330">
           <caret line="110" column="8" lean-forward="true" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="8" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
