@@ -134,7 +134,7 @@ weatherRender.init();
 1、字面量方式
 
 ```
-var obj = {};
+var obj = {}; 
 ```
 
 2、构造函数模式
